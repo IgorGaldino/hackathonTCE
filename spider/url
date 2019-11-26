@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:tc="http://www.morphbit.com/thymeleaf/component"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	layout:decorate="~{templateapp}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta property="idtenancy" content="1160490" />
+    <meta property="version" content="2.0.147" />
+    <title>PREFEITURA MUNICIPAL DE ARACATI: Lista de pagamentos de despesas orçamentárias com diárias  (Exercício de 2019, Data maior ou igual a 01/01/2019, Data menor ou igual a 13/11/2019 )Total das despesas: 13.945,00. </title>
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/images/bandbrasil.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+    <link href="/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    
+    <!-- Colorpicker Css -->
+    <link href="/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.css" rel="stylesheet" />
+
+    <!-- Dropzone Css -->
+    <link href="/plugins/dropzone/dropzone.css" rel="stylesheet">
+
+    <!-- Bootstrap Spinner Css -->
+    <link href="/plugins/jquery-spinner/css/bootstrap-spinner.css" rel="stylesheet">
+
+    <!-- Bootstrap Tagsinput Css -->
+    <link href="/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet">
+
+    <!-- Bootstrap Select Css -->
+    <link href="/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- noUISlider Css -->
+    <link href="/plugins/nouislider/nouislider.min.css" rel="stylesheet" />
+
+   <!-- Bootstrap DatePicker Css -->
+   <link href="/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />    
+
+    <!-- Bootstrap Core Css -->
+    <link href="/plugins/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+    <!-- Waves Effect Css -->
+    <link href="/plugins/node-waves/waves.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Animation Css -->
+    <link href="/plugins/animate-css/animate.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Custom Css -->
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    
+    <link href="/css/print.css" rel="stylesheet" type="text/css">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="/css/themes/all-themes.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- Multi Select Css -->
+    <link href="/plugins/multi-select/css/multi-select.css" rel="stylesheet" type="text/css">
+    <link href="/css/icons.css" rel="stylesheet" type="text/css">
+    <link href="/plugins/bootstrap-md-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+    
+    <!-- JQuery DataTable Css -->
+    <link href="/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    
+    <link href="/css/file-explore.css" rel="stylesheet" type="text/css"/>
+    
+    <link href="/plugins/acessibilidade/acessibilidade.css" rel="stylesheet" type="text/css">
+    
+    <link href="/css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    
+    
+    <!-- -------------------------------------------------------------------------------------------------------------- -->
+    
+    
+	    <style>
+		
+			.ui-autocomplete
+			{
+			    list-style : none;
+			    background-color: #ffffff;
+			    border: solid 1px lightblue;
+			    width:300px;
+			}
+			
+			.ui-helper-hidden-accessible {
+				position: absolute !important;
+				clip: rect(1px, 1px, 1px, 1px);
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+			
+			hr { 
+			  display: block;
+			  margin-top: 0.5em;
+			  margin-bottom: 0.5em;
+			  margin-left: auto;
+			  margin-right: auto;
+			  border-style: inset;
+			  border-width: 1px;
+			}
+			
+			#menu-home .tit{font-size: 16px;}
+			
+			#footer {
+			    bottom: 0;
+			    text-align: center;
+			    width: 100%;
+			    height: 110px;
+			    color: #a2a2a2;
+			    padding-top: 35px;
+			    padding-bottom: 15px;
+			}
+			
+				    
+	    </style>
+	    
+</head>
+
+<body class="theme-teal ls-opened">
+	<!-- Page Loader -->
+	<div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Por favor, aguarde...</p>
+        </div>
+    </div>
+	<!-- #END# Page Loader -->
+	<!-- Overlay For Sidebars -->
+	<div class="overlay"></div>
+	<!-- #END# Overlay For Sidebars -->
+	<!-- Search Bar -->
+	<div class="search-bar" >
+	    <form class="app-search" action="/pesquisarportal/resultado/1160490?clean=false" method="GET">
+	        <div class="search-icon">
+	            <i class="material-icons">search</i>
+	        </div>
+	        <input type="text" placeholder="Consultar páginas aqui..." id="param" name="param">
+	        <div class="close-search">
+	            <i class="material-icons">close</i>
+	        </div>
+        </form>
+    </div>
+	<!-- #END# Search Bar -->
+	<!-- Top Bar -->
+	<nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
+                <a href="javascript:void(0);" class="bars"></a>
+                <a class="navbar-brand" href="/1160490?clean=false">GOVERNO TRANSPARENTE</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right ctn-acessibilidade">
+                    <!-- Call Search -->
+                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
+                    <!-- #END# Call Search -->
+                    <!-- Notifications -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            <i class="material-icons">more_vert</i>
+                        </a>
+                        <ul class="dropdown-menu pull-right">
+                                <li><a href="/sobre/1160490"><i class="material-icons">folder_open</i>Sobre</a></li>
+                                <li><a href="/legislacao/1160490"><i class="material-icons">insert_drive_file</i>Legislação</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="http://www.gdic.com.br/portaldatransparencia/administracao/1160490/login" target="_blank"><i class="material-icons">security</i>Gerenciador</a></li>
+                            </ul>
+                    </li>
+                    <!-- #END# Notifications -->
+                    <!-- Tasks -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<!-- #Top Bar -->
+	<section>
+		<!-- Left Sidebar -->
+		<aside id="leftsidebar" class="sidebar">
+            <!-- User Info -->
+            <div class="user-info">
+                <div class="image">
+                    <img src="https://s3.amazonaws.com/imagensapp/brasao/brasao_1160.png" alt="User" style="border: 3px solid rgba(0, 0, 0, 0.14)" />
+                </div>
+                
+                
+            </div>
+            <!-- #User Info -->
+            <!-- Menu -->
+            <div class="menu">
+                <ul class="list">
+                    <li class="none">
+                        <a href="/1160490?clean=false">
+                            <i class="material-icons">home</i>
+                            <span>Principal</span>
+                        </a>
+                    </li>
+                    <li class="none">
+                        <a href="/sobre/1160490?clean=false">
+                            <i class="material-icons">folder_open</i>
+                            <span>Sobre o portal
+                        </a>
+                    </li>
+                    <li class="none">
+                        <a href="/legislacao/1160490?clean=false">
+                            <i class="material-icons">insert_drive_file</i>
+                            <span>Legislação</span>
+                        </a>
+                    </li>
+                    <li class="none">
+                        <a href="/estruturainformacao/1160490?clean=false">
+                            <i class="material-icons">library_books</i>
+                            <span>Estruturação da informação</span>
+                        </a>
+                    </li>
+                    
+                    <li class="none">
+                        <a href="/faq/1160490?clean=false">
+                            <i class="material-icons">live_help</i>
+                            <span>Perguntas e respostas</span>
+                        </a>
+                    </li>
+                    <li class="none">
+                        <a href="/acessibilidade/1160490?clean=false">
+                            <i class="material-icons">accessibility</i>
+                            <span>Acessibilidade</span>
+                        </a>
+                    </li>
+                    <li class="none">
+                        <a href="/pesquisarportal/1160490?clean=false">
+                            <i class="material-icons">search</i>
+                            <span>Consultar no portal</span>
+                        </a>
+                    </li>
+                    <li class="none">
+                        <a href="/glossario/1160490?clean=false">
+                            <i class="material-icons">list</i>
+                            <span>Glossário</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- #Menu -->
+            <!-- Footer -->
+            <div class="legal" >
+                <div class="copyright">
+                    <a href="/periodo/1160490?clean=false">Dados atualizados em 22/11/2019</a>.
+                </div>
+            </div>
+            <!-- #Footer -->
+        </aside>
+		<!-- #END# Left Sidebar -->
+	</section>
+
+	<section class="content">
+		<div class="container-fluid">
+
+			<div class="block-header">
+				<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+</head>
+<body>
+
+     
+     
+     <h2 class="text-uppercase">
+         <strong>PREFEITURA MUNICIPAL DE ARACATI - CE</strong>
+     </h2>
+     
+     <hr>
+
+</body>
+</html>
+                 <ol class="breadcrumb">
+                     <li>
+                         <a href="/1160490?clean=false">
+                             <i class="material-icons">home</i> Principal
+                         </a>
+                     </li>
+                     <li>
+                         <a href="/acessoinfo/1160490/acessoinfo/despesascomdiarias?datainfo=nFwva+wI4eZ9FeBtH4TlxEbuCOgjdEdeT8etwENYYCI=&amp;clean=false">
+                             <i class="material-icons">menu</i> Despesas com diárias
+                         </a>
+                     </li>
+                     <li>
+                         <a href="/acessoinfo/1160490/consultarpagdesporcdiarias?datainfo=nFwva+wI4eZ9FeBtH4TlxEbuCOgjdEdeT8etwENYYCI=&amp;clean=false">
+                             <i class="material-icons">search</i> Consulta
+                         </a>
+                     </li>
+                     <li class="active">
+                         <i class="material-icons">list</i> Resultado
+                     </li>
+                 </ol>				
+
+			</div>
+
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                            <div class="header">
+                                <h2>Resultado da consulta de pagamentos de despesas orçamentárias com diárias (27 encontrados )</h2>
+                            </div>
+                            
+                            <div class="body">
+
+	                            <div class="button-items">
+	                                <a id="btn-novaconsulta" href="/acessoinfo/1160490/consultarpagdesporcdiarias?datainfo=nFwva+wI4eZ9FeBtH4TlxEbuCOgjdEdeT8etwENYYCI=&amp;clean=false" class="btn bg-blue waves-effect">NOVA CONSULTA</a>
+	                                <p></p>
+	                            </div>
+	                            
+								<div>
+									<div>Filtros utilizados</div>
+									
+										<span class="badge bg-cyan" style="font-size: 90%;">Exercício de 2019</span>&nbsp;
+									
+										<span class="badge bg-cyan" style="font-size: 90%;">Data maior ou igual a 01/01/2019</span>&nbsp;
+									
+										<span class="badge bg-cyan" style="font-size: 90%;">Data menor ou igual a 13/11/2019</span>&nbsp;
+									
+								</div>
+								<hr>
+	                            
+                                <div class="table-responsive">
+                                    <table id="datatable-buttons" class="table table-bordered table-striped table-hover dataTable js-exportable" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                        <thead>
+	                                        <tr>
+												<th>Data</th>
+												<th>Documento</th>
+												<th>Empenho</th>
+												<th>Unidade gestora</th>
+												
+												<th>CPF/CNPJ</th>
+												<th>Natureza da despesa</th>
+												<th>Modalidade da licitação</th>
+												<th>Registro</th>
+												<th>Valor (R$)</th>
+	                                        </tr>
+                                        </thead>
+										<tfoot>
+											<tr>
+												<th>Data</th>
+												<th>Documento</th>
+												<th>Empenho</th>
+												<th>Unidade gestora</th>
+												
+												<th>CPF/CNPJ</th>
+												<th>Natureza da despesa</th>
+												<th>Modalidade da licitação</th>
+												<th>Registro</th>
+												<th>Valor (R$)</th>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<td>27/05/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/340019/27050001&amp;clean=false"
+													role="button"><span>27050001</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/340019&amp;clean=false"
+													role="button"><span>15050049</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.618.
+063-92</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">350,00</td>
+											</tr>
+											<tr>
+												<td>07/06/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/367719/07060015&amp;clean=false"
+													role="button"><span>07060015</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/367719&amp;clean=false"
+													role="button"><span>07060018</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.870.
+028-26</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">350,00</td>
+											</tr>
+											<tr>
+												<td>07/06/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/368019/07060016&amp;clean=false"
+													role="button"><span>07060016</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/368019&amp;clean=false"
+													role="button"><span>07060019</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.169.
+503-68</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">350,00</td>
+											</tr>
+											<tr>
+												<td>26/06/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/404319/26060016&amp;clean=false"
+													role="button"><span>26060016</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/404319&amp;clean=false"
+													role="button"><span>25060007</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.093.
+553-60</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">140,00</td>
+											</tr>
+											<tr>
+												<td>02/07/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/405319/02070047&amp;clean=false"
+													role="button"><span>02070047</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/405319&amp;clean=false"
+													role="button"><span>28060006</span></a></td>
+												<td>030 - Secretaria de Turismo e Cultura</td>
+												
+												<td>XXX.737.
+733-53</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">900,00</td>
+											</tr>
+											<tr>
+												<td>02/07/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/405419/02070046&amp;clean=false"
+													role="button"><span>02070046</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/405419&amp;clean=false"
+													role="button"><span>28060007</span></a></td>
+												<td>003 - Fundo Municipal de Saúde</td>
+												
+												<td>XXX.539.
+903-87</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.200,00</td>
+											</tr>
+											<tr>
+												<td>05/07/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/411219/05070001&amp;clean=false"
+													role="button"><span>05070001</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/411219&amp;clean=false"
+													role="button"><span>05070003</span></a></td>
+												<td>027 - Sec. de Cidadania e Desenvolvimento Social</td>
+												
+												<td>XXX.195.
+693-31</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.000,00</td>
+											</tr>
+											<tr>
+												<td>09/07/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/411019/09070024&amp;clean=false"
+													role="button"><span>09070024</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/411019&amp;clean=false"
+													role="button"><span>05070002</span></a></td>
+												<td>027 - Sec. de Cidadania e Desenvolvimento Social</td>
+												
+												<td>XXX.770.
+893-01</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.000,00</td>
+											</tr>
+											<tr>
+												<td>07/08/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/466919/07080008&amp;clean=false"
+													role="button"><span>07080008</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/466919&amp;clean=false"
+													role="button"><span>02080003</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.942.
+593-06</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">350,00</td>
+											</tr>
+											<tr>
+												<td>12/08/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/484019/12080040&amp;clean=false"
+													role="button"><span>12080040</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/484019&amp;clean=false"
+													role="button"><span>07080009</span></a></td>
+												<td>018 - Gabinete do Prefeito</td>
+												
+												<td>XXX.218.
+283-06</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">100,00</td>
+											</tr>
+											<tr>
+												<td>12/08/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/487719/12080039&amp;clean=false"
+													role="button"><span>12080039</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/487719&amp;clean=false"
+													role="button"><span>07080010</span></a></td>
+												<td>018 - Gabinete do Prefeito</td>
+												
+												<td>XXX.254.
+333-53</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">125,00</td>
+											</tr>
+											<tr>
+												<td>28/08/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/503419/28080022&amp;clean=false"
+													role="button"><span>28080022</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/503419&amp;clean=false"
+													role="button"><span>27080005</span></a></td>
+												<td>030 - Secretaria de Turismo e Cultura</td>
+												
+												<td>XXX.737.
+733-53</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.200,00</td>
+											</tr>
+											<tr>
+												<td>28/08/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/503219/28080023&amp;clean=false"
+													role="button"><span>28080023</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/503219&amp;clean=false"
+													role="button"><span>27080004</span></a></td>
+												<td>032 - Secretaria de Desenv. Econômico, Trab. e Renda</td>
+												
+												<td>XXX.804.
+203-00</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.200,00</td>
+											</tr>
+											<tr>
+												<td>20/09/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/541019/20090012&amp;clean=false"
+													role="button"><span>20090012</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/541019&amp;clean=false"
+													role="button"><span>11090004</span></a></td>
+												<td>034 - Secretaria de Esporte e Lazer</td>
+												
+												<td>XXX.561.
+313-49</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.200,00</td>
+											</tr>
+											<tr>
+												<td>24/09/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/528619/24090053&amp;clean=false"
+													role="button"><span>24090053</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/528619&amp;clean=false"
+													role="button"><span>16090002</span></a></td>
+												<td>033 - Secretaria de Desenv. Agrário e Rec.  Hídricos</td>
+												
+												<td>XXX.264.
+929-34</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">150,00</td>
+											</tr>
+											<tr>
+												<td>27/09/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/557019/27090082&amp;clean=false"
+													role="button"><span>27090082</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/557019&amp;clean=false"
+													role="button"><span>25090010</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.942.
+593-06</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">350,00</td>
+											</tr>
+											<tr>
+												<td>02/10/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/564119/02100018&amp;clean=false"
+													role="button"><span>02100018</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/564119&amp;clean=false"
+													role="button"><span>01100003</span></a></td>
+												<td>042 - Casa Civil</td>
+												
+												<td>XXX.557.
+583-08</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">70,00</td>
+											</tr>
+											<tr>
+												<td>02/10/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/557619/02100014&amp;clean=false"
+													role="button"><span>02100014</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/557619&amp;clean=false"
+													role="button"><span>01100001</span></a></td>
+												<td>044 - Controladoria e Ouvidoria Geral do Município</td>
+												
+												<td>XXX.094.
+933-65</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">70,00</td>
+											</tr>
+											<tr>
+												<td>02/10/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/563519/02100015&amp;clean=false"
+													role="button"><span>02100015</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/563519&amp;clean=false"
+													role="button"><span>01100002</span></a></td>
+												<td>042 - Casa Civil</td>
+												
+												<td>XXX.371.
+933-49</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">70,00</td>
+											</tr>
+											<tr>
+												<td>15/10/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/541319/15100038&amp;clean=false"
+													role="button"><span>15100038</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/541319&amp;clean=false"
+													role="button"><span>30080020</span></a></td>
+												<td>010 - FUNDEB</td>
+												
+												<td>XXX.347.
+863-87</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">140,00</td>
+											</tr>
+											<tr>
+												<td>18/10/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/652219/18100068&amp;clean=false"
+													role="button"><span>18100068</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/652219&amp;clean=false"
+													role="button"><span>10100020</span></a></td>
+												<td>030 - Secretaria de Turismo e Cultura</td>
+												
+												<td>XXX.737.
+733-53</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">600,00</td>
+											</tr>
+											<tr>
+												<td>18/10/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/650519/18100069&amp;clean=false"
+													role="button"><span>18100069</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/650519&amp;clean=false"
+													role="button"><span>10100016</span></a></td>
+												<td>030 - Secretaria de Turismo e Cultura</td>
+												
+												<td>XXX.468.
+553-21</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">200,00</td>
+											</tr>
+											<tr>
+												<td>21/10/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/546119/21100002&amp;clean=false"
+													role="button"><span>21100002</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/546119&amp;clean=false"
+													role="button"><span>23080012</span></a></td>
+												<td>004 - Fundo Municipal de Educação</td>
+												
+												<td>XXX.793.
+403-82</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">150,00</td>
+											</tr>
+											<tr>
+												<td>07/11/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/686519/07110027&amp;clean=false"
+													role="button"><span>07110027</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/686519&amp;clean=false"
+													role="button"><span>06110002</span></a></td>
+												<td>030 - Secretaria de Turismo e Cultura</td>
+												
+												<td>XXX.737.
+733-53</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.200,00</td>
+											</tr>
+											<tr>
+												<td>07/11/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/687119/07110025&amp;clean=false"
+													role="button"><span>07110025</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/687119&amp;clean=false"
+													role="button"><span>06110004</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.330.
+123-05</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">140,00</td>
+											</tr>
+											<tr>
+												<td>07/11/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/687319/07110024&amp;clean=false"
+													role="button"><span>07110024</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/687319&amp;clean=false"
+													role="button"><span>06110005</span></a></td>
+												<td>005 - Fundo Municipal de Assistência Social</td>
+												
+												<td>XXX.195.
+693-31</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">140,00</td>
+											</tr>
+											<tr>
+												<td>07/11/2019</td>
+												<td><a
+													href="/transparencia/1160490/detalharpagamento/11/686719/07110016&amp;clean=false"
+													role="button"><span>07110016</span></a></td>
+												<td><a
+													href="/transparencia/1160490/detalharempenhoportal/11/686719&amp;clean=false"
+													role="button"><span>06110003</span></a></td>
+												<td>032 - Secretaria de Desenv. Econômico, Trab. e Renda</td>
+												
+												<td>XXX.804.
+203-00</td>
+												<td>3.3.90.14.00 - Diárias - civil</td>
+												<td>Outros/não se aplica</td>
+												<td>Realizado</td>
+												<td style="text-align: right;">1.200,00</td>
+											</tr>
+										</tbody>
+                                    </table>
+									<hr/>
+									<div
+										style="padding-right: 10px; padding-left: 10px; padding-bottom: 10px;">
+		
+										<p style="">Total: 13.945,00 (R$)</p>
+		
+									</div>
+                                    
+                                    
+                                    
+									
+                                    
+                                </div>
+                                
+                            </div>
+                    </div>
+    </div>
+            </div>
+
+
+		</div>
+		
+		<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+</head>
+<body>
+
+		<footer id="footer" class="hidden-print">
+		    <img src="/images/logo_aspec_rodape.png" alt="">
+		    <p class="c-black" style="font-size: 15px;">Plataforma tecnológica Aspec Informática</p>
+        </footer>
+   
+
+</body>
+</html>
+		
+	</section>
+	
+	<!-- Jquery Core Js -->
+	<script src="/plugins/jquery/jquery.min.js"></script>
+	
+  <!-- Bootstrap Datepicker Plugin Js -->
+  <!-- <script th:src="@{~/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js}"></script> -->
+  
+       <script src="/plugins/bootstrap-md-datetimepicker/js/moment-with-locales.min.js"></script>
+       <script src="/plugins/bootstrap-md-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+  
+
+    <!-- Dropzone Plugin Js -->
+    <script src="/plugins/dropzone/dropzone.js"></script>
+
+    <!-- Input Mask Plugin Js -->
+    <script src="/plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+
+	<!-- Bootstrap Core Js -->
+	<script src="/plugins/bootstrap/js/bootstrap.js"></script>
+
+	<!-- Select Plugin Js -->
+	<script
+		src="/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+	<!-- Slimscroll Plugin Js -->
+	<script
+		src="/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+	<!-- Waves Effect Plugin Js -->
+	<script src="/plugins/node-waves/waves.js"></script>
+
+	<!-- Jquery CountTo Plugin Js -->
+	<script src="/plugins/jquery-countto/jquery.countTo.js"></script>
+
+	<!-- Sparkline Chart Plugin Js -->
+	<script src="/plugins/jquery-sparkline/jquery.sparkline.js"></script>
+
+	<!-- Custom Js -->
+	<script src="/js/admin.js"></script>
+
+	<!-- Demo Js -->
+	<script src="/js/demo.js"></script>
+	
+    <!-- Jquery DataTable Plugin Js -->
+    <script src="/plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="/plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="/plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="/plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="/plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="/plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="/plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="/plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="/plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
+    
+     <!-- Datatable init js -->
+     
+     <script src="/js/custom/datatables_col_9.init.js"></script>
+     <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/plug-ins/1.10.19/sorting/date-eu.js"></script>
+     
+     <script src="/js/script.js"></script>
+     
+     <script src="/plugins/acessibilidade/acessibilidade.js"></script>
+    
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-140664323-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'UA-140664323-1');
+	</script>
+
+
+</body>
+</html>

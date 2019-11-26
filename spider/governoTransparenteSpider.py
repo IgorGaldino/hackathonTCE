@@ -12,10 +12,12 @@ class GovernotransparenteSpider(scrapy.Spider):
 
     # Faz a raspagem dos dados
     def parse(self, response):
+        nome = response.css('h2.text-uppercase strong::text').extract_first()
+        print('/*/*/*/*/*/*/*', nome)
         page = response.url.split("/")[-2]
         codCidade = response.url.split("/")[-3]
         #Arquivo com o nome da consulta e código da cidade
-        file = open(page+'('+codCidade+').csv', 'w')
+        file = open(page+'('+nome+').csv', 'w')
         head = response.css('table#datatable-buttons thead th::text').extract()
         # link que possui atributos diferente
         if page == 'consultarcontratoaditivo':
