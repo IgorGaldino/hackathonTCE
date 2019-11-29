@@ -16,9 +16,9 @@ class GovernotransparenteSpider(scrapy.Spider):
         nome = response.css('h2.text-uppercase strong::text').extract_first()
         page = response.url.split("/")[-2]
         # Cria pasta das bases por prefeituras
-        os.system("mkdir -p '" + nome + "'")
+        os.system("mkdir -p 'baseDados/" + nome + "'")
         #Arquivo com o nome da consulta e código da cidade
-        file = open('./'+nome+'/'+page+'('+nome+').csv', 'w')
+        file = open('./baseDados/'+nome+'/'+page+'('+nome+').csv', 'w')
         head = response.css('table#datatable-buttons thead th::text').extract()
         # link que possui atributos diferente
         if page == 'consultarcontratoaditivo':

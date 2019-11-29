@@ -15,9 +15,9 @@ class TransparenciaFortalezaSpider(scrapy.Spider):
         nome = response.css('main h1::text').extract_first()
         year = response.url.split("=")[1].split("&")[0]
         # Cria pasta das bases por prefeituras
-        os.system("mkdir -p 'PREFEITURA DE FORTALEZA'")
+        os.system("mkdir -p 'baseDados/PREFEITURA DE FORTALEZA'")
         #Arquivo com o nome da consulta
-        file = open('./PREFEITURA DE FORTALEZA/' + nome +'(' + year + ').csv', 'w')
+        file = open('./baseDados/PREFEITURA DE FORTALEZA/' + nome +'(' + year + ').csv', 'w')
         head = response.css('table.table-striped thead th::text').extract()
         head = list(map(lambda text : text.lstrip().rstrip(), head))
         if(nome == 'Contrato'):
