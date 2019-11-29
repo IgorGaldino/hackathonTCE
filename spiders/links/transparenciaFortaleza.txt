@@ -1,0 +1,6 @@
+https://transparencia.fortaleza.ce.gov.br/index.php/contrato/consultar?cboExercicio=2019&filtroPorOrgao=0&txtContratado=&txtObjeto=&txtNumSACC=&txtNumContrato=
+https://transparencia.fortaleza.ce.gov.br/index.php/contrato/consultar?cboExercicio=2018&filtroPorOrgao=0&txtContratado=&txtObjeto=&txtNumSACC=&txtNumContrato=
+https://transparencia.fortaleza.ce.gov.br/index.php/contrato/consultar?cboExercicio=2017&filtroPorOrgao=0&txtContratado=&txtObjeto=&txtNumSACC=&txtNumContrato=
+https://transparencia.fortaleza.ce.gov.br/index.php/contrato/consultar?cboExercicio=2016&filtroPorOrgao=0&txtContratado=&txtObjeto=&txtNumSACC=&txtNumContrato=
+https://transparencia.fortaleza.ce.gov.br/index.php/contrato/consultar?cboExercicio=2015&filtroPorOrgao=0&txtContratado=&txtObjeto=&txtNumSACC=&txtNumContrato=
+https://transparencia.fortaleza.ce.gov.br/index.php/diarias/consultar?cboExercicio=&filtroPorOrgao=null&cboMes=&txtNome=

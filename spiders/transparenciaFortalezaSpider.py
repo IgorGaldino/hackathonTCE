@@ -1,23 +1,23 @@
 # Author Igor Galdino
 
 import scrapy
-
+import os
 class TransparenciaFortalezaSpider(scrapy.Spider):
     name = 'transparenciaFortaleza'
     allowed_domains = ['https://transparencia.fortaleza.ce.gov.br']
     def start_requests(self):
-        urls = [
-            'https://transparencia.fortaleza.ce.gov.br/index.php/diarias/consultar?cboExercicio=&filtroPorOrgao=null&cboMes=&txtNome='
-        ]
+        urls = self.openLinks()
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
 
     # Faz a raspagem dos dados
     def parse(self, response):
         nome = response.css('main h1::text').extract_first()
-        # page = response.url.split("/")[-2]
+        year = response.url.split("=")[1].split("&")[0]
+        # Cria pasta das bases por prefeituras
+        os.system("mkdir -p 'PREFEITURA DE FORTALEZA'")
         #Arquivo com o nome da consulta
-        file = open(nome +'.csv', 'w')
+        file = open('./PREFEITURA DE FORTALEZA/' + nome +'(' + year + ').csv', 'w')
         head = response.css('table.table-striped thead th::text').extract()
         head = list(map(lambda text : text.lstrip().rstrip(), head))
         if(nome == 'Contrato'):
@@ -37,3 +37,11 @@ class TransparenciaFortalezaSpider(scrapy.Spider):
             line += i + '|'
         line += '\n'
         return line
+
+    #Abre arquivos com os links 
+    def openLinks(self):
+        links = []
+        with open('./links/transparenciaFortaleza.txt', 'r') as file:
+            for link in file:
+                links.append(link)
+        return links
