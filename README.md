@@ -1,6 +1,10 @@
 # hackathonTCE
 Repository hackathon TCE
 
-#Run spider (scrapy runspider nomeSpider.py)
-scrapy runspider governoTransparenteSpider.py
+#Dependências
+python 3
+python3-scrapy
+
+#Run spider
+scrapy runspider nomeSpider.py
 
