@@ -1,3 +1,4 @@
+##Aracati## (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1160490/consultarpagdesporcdiarias/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1160490/consultarpagdesporcpessoal/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1160490/consultarpagdesporc/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -18,6 +19,7 @@ http://www.governotransparente.com.br/acessoinfo/1160490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1160490/consultarpagdesporcpessoal/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1160490/consultarpagdesporc/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1160490/consultarcontratoaditivo/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Aquiraz## (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1159479/consultarpagdesporcdiarias/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1159479/consultarpagdesporcpessoal/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1159479/consultarpagdesporc/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -38,6 +40,7 @@ http://www.governotransparente.com.br/acessoinfo/1159479/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1159479/consultarpagdesporcpessoal/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1159479/consultarpagdesporc/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1159479/consultarcontratoaditivo/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Canidé## (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1197490/consultarpagdesporcdiarias/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1197490/consultarpagdesporcpessoal/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1197490/consultarpagdesporc/resultado?ano=11&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -58,6 +61,7 @@ http://www.governotransparente.com.br/acessoinfo/1197490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1197490/consultarpagdesporcpessoal/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1197490/consultarpagdesporc/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1197490/consultarcontratoaditivo/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Cascavel## (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1209490/consultarpagdesporcdiarias/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1209490/consultarpagdesporcpessoal/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1209490/consultarpagdesporc/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -78,6 +82,7 @@ http://www.governotransparente.com.br/acessoinfo/1209490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1209490/consultarpagdesporcpessoal/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1209490/consultarpagdesporc/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1209490/consultarcontratoaditivo/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Crateús## (2015-2016)
 http://www.governotransparente.com.br/acessoinfo/1225490/consultarpagdesporcdiarias/resultado?ano=8&inicio=01%2F01%2F2016&fim=31%2F12%2F2016&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1225490/consultarpagdesporcpessoal/resultado?ano=8&inicio=01%2F01%2F2016&fim=31%2F12%2F2016&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1225490/consultarpagdesporc/resultado?ano=8&inicio=01%2F01%2F2016&fim=31%2F12%2F2016&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -86,6 +91,7 @@ http://www.governotransparente.com.br/acessoinfo/1225490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1225490/consultarpagdesporcpessoal/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1225490/consultarpagdesporc/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1225490/consultarcontratoaditivo/resultado?ano=7&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Crato (2015-2017)
 http://www.governotransparente.com.br/acessoinfo/1227489/consultarpagdesporcdiarias/resultado?ano=10&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1227489/consultarpagdesporcpessoal/resultado?ano=10&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1227489/consultarpagdesporc/resultado?ano=10&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -99,6 +105,7 @@ http://www.governotransparente.com.br/acessoinfo/1227489/consultarpagdesporcpess
 http://www.governotransparente.com.br/transparencia/1227489/consultarpagdesporc/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1227489/consultarcontratoaditivo/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1227489/consultarcontratoaditivo/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Horizonte (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1262488/consultarpagdesporcdiarias/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1262488/consultarpagdesporcpessoal/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1262488/consultarpagdesporc/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -119,6 +126,7 @@ http://www.governotransparente.com.br/acessoinfo/1262488/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1262488/consultarpagdesporcpessoal/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1262488/consultarpagdesporc/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1262488/consultarcontratoaditivo/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Iguatu (2015-2016)
 http://www.governotransparente.com.br/acessoinfo/1272488/consultarpagdesporcdiarias/resultado?ano=11&inicio=01%2F01%2F2016&fim=31%2F12%2F2016&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1272488/consultarpagdesporcpessoal/resultado?ano=11&inicio=01%2F01%2F2016&fim=31%2F12%2F2016&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1272488/consultarpagdesporc/resultado?ano=11&inicio=01%2F01%2F2016&fim=31%2F12%2F2016&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -127,6 +135,7 @@ http://www.governotransparente.com.br/acessoinfo/1272488/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1272488/consultarpagdesporcpessoal/resultado?ano=10&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1272488/consultarpagdesporc/resultado?ano=10&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1272488/consultarcontratoaditivo/resultado?ano=10&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Itapipoca (2017-2019)
 http://www.governotransparente.com.br/acessoinfo/1292490/consultarpagdesporcdiarias/resultado?ano=7&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1292490/consultarpagdesporcpessoal/resultado?ano=7&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1292490/consultarpagdesporc/resultado?ano=7&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -139,6 +148,7 @@ http://www.governotransparente.com.br/acessoinfo/1292490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1292490/consultarpagdesporcpessoal/resultado?ano=5&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1292490/consultarpagdesporc/resultado?ano=5&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1292490/consultarcontratoaditivo/resultado?ano=5&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&contr=&credor=-1&clean=false
+##Juazeiro do Norte (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1311490/consultarpagdesporcdiarias/resultado?ano=13&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1311490/consultarpagdesporcpessoal/resultado?ano=13&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1311490/consultarpagdesporc/resultado?ano=13&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -159,6 +169,7 @@ http://www.governotransparente.com.br/acessoinfo/1311490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1311490/consultarpagdesporcpessoal/resultado?ano=9&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1311490/consultarpagdesporc/resultado?ano=9&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1311490/consultarcontratoaditivo/resultado?ano=9&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Limoeiro do Norte (2017-2019)
 http://www.governotransparente.com.br/acessoinfo/1316486/consultarpagdesporcdiarias/resultado?ano=5&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1316486/consultarpagdesporcpessoal/resultado?ano=5&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1316486/consultarpagdesporc/resultado?ano=5&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -171,6 +182,7 @@ http://www.governotransparente.com.br/acessoinfo/1316486/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1316486/consultarpagdesporcpessoal/resultado?ano=3&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1316486/consultarpagdesporc/resultado?ano=3&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1316486/consultarcontratoaditivo/resultado?ano=3&inicio=01%2F01%2F2017&fim=31%2F12%2F2017&contr=&credor=-1&clean=false
+##Maracanaú (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1320490/consultarpagdesporcdiarias/resultado?ano=14&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1320490/consultarpagdesporcpessoal/resultado?ano=14&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1320490/consultarpagdesporc/resultado?ano=14&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -191,6 +203,7 @@ http://www.governotransparente.com.br/acessoinfo/1320490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1320490/consultarpagdesporcpessoal/resultado?ano=10&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1320490/consultarpagdesporc/resultado?ano=10&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1320490/consultarcontratoaditivo/resultado?ano=10&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Pacajus (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1360490/consultarpagdesporcdiarias/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1360490/consultarpagdesporcpessoal/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1360490/consultarpagdesporc/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -211,6 +224,7 @@ http://www.governotransparente.com.br/acessoinfo/1360490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1360490/consultarpagdesporcpessoal/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1360490/consultarpagdesporc/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1360490/consultarcontratoaditivo/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Quixadá (2018-2019)
 http://www.governotransparente.com.br/acessoinfo/1398489/consultarpagdesporcdiarias/resultado?ano=6&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1398489/consultarpagdesporcpessoal/resultado?ano=6&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1398489/consultarpagdesporc/resultado?ano=6&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -219,6 +233,7 @@ http://www.governotransparente.com.br/acessoinfo/1398489/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1398489/consultarpagdesporcpessoal/resultado?ano=5&inicio=01%2F01%2F2018&fim=31%2F12%2F2018&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1398489/consultarpagdesporc/resultado?ano=5&inicio=01%2F01%2F2018&fim=31%2F12%2F2018&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1398489/consultarcontratoaditivo/resultado?ano=5&inicio=01%2F01%2F2018&fim=31%2F12%2F2018&contr=&credor=-1&clean=false
+##Quixeramobim (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1402490/consultarpagdesporcdiarias/resultado?ano=10&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1402490/consultarpagdesporcpessoal/resultado?ano=10&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1402490/consultarpagdesporc/resultado?ano=10&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -239,6 +254,7 @@ http://www.governotransparente.com.br/acessoinfo/1402490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1402490/consultarpagdesporcpessoal/resultado?ano=6&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1402490/consultarpagdesporc/resultado?ano=6&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1402490/consultarcontratoaditivo/resultado?ano=6&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Russas (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1409490/consultarpagdesporcdiarias/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1409490/consultarpagdesporcpessoal/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1409490/consultarpagdesporc/resultado?ano=12&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -259,6 +275,7 @@ http://www.governotransparente.com.br/acessoinfo/1409490/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1409490/consultarpagdesporcpessoal/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1409490/consultarpagdesporc/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1409490/consultarcontratoaditivo/resultado?ano=8&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##São Gonçalo do Amarante (2015-2019)
 http://www.governotransparente.com.br/acessoinfo/1421489/consultarpagdesporcdiarias/resultado?ano=7&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1421489/consultarpagdesporcpessoal/resultado?ano=7&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1421489/consultarpagdesporc/resultado?ano=7&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
@@ -279,6 +296,7 @@ http://www.governotransparente.com.br/acessoinfo/1421489/consultarpagdesporcdiar
 http://www.governotransparente.com.br/acessoinfo/1421489/consultarpagdesporcpessoal/resultado?ano=3&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1421489/consultarpagdesporc/resultado?ano=3&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1421489/consultarcontratoaditivo/resultado?ano=3&inicio=01%2F01%2F2015&fim=31%2F12%2F2015&contr=&credor=-1&clean=false
+##Tianguá: 
 http://www.governotransparente.com.br/acessoinfo/1442485/consultarpagdesporcdiarias/resultado?ano=5&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/acessoinfo/1442485/consultarpagdesporcpessoal/resultado?ano=5&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
 http://www.governotransparente.com.br/transparencia/1442485/consultarpagdesporc/resultado?ano=5&inicio=01%2F01%2F2019&fim=31%2F10%2F2019&unid=-1&orgao=-1&elem=-1&valormax=&valormin=&credor=-1&clean=false
