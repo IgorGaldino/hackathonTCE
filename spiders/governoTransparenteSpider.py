@@ -16,10 +16,12 @@ class GovernotransparenteSpider(scrapy.Spider):
         nome = response.css('h2.text-uppercase strong::text').extract_first()
         page = response.url.split("/")[-2]
         ano = response.url.split("&")[2][-4:]
+        city = nome[24:][:-5]
+
         # Cria pasta das bases por prefeituras
-        os.system("mkdir -p 'baseDados/" + nome + "'")
+        os.system("mkdir -p baseDados")
         #Arquivo com o nome da consulta e código da cidade
-        file = open('./baseDados/'+nome+'/'+page+'('+ano+').csv', 'w')
+        file = open('./baseDados/'+page+'('+ano+').csv', 'a')
         head = response.css('table#datatable-buttons thead th::text').extract()
         # link que possui atributos diferente
         if page == 'consultarcontratoaditivo':
@@ -27,16 +29,16 @@ class GovernotransparenteSpider(scrapy.Spider):
         else:
             head.remove('Documento')
             head.remove('Empenho')
-        file.write(self.convertToString(head))
+        file.write(self.convertToString(head, 'cidade', 'ano'))
         for i in response.css('table#datatable-buttons tbody tr'):
             row = i.css('td::text').extract()
             row[2] = row[2].replace('\n', '')
-            file.write(self.convertToString(row))
+            file.write(self.convertToString(row, city, ano))
         file.close()
 
     #converte a lista para string
-    def convertToString(self, row):
-        line = ''
+    def convertToString(self, row, city, year):
+        line = city + '|' + year + '|'
         for i in row:
             line += i + '|'
         line += '\n'
