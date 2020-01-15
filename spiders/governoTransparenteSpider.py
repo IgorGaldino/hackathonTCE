@@ -6,6 +6,8 @@ import os
 class GovernotransparenteSpider(scrapy.Spider):
     name = 'governoTransparente'
     allowed_domains = ['http://www.governotransparente.com.br']
+    pageTemp = ''
+    anoTemp = ''
     def start_requests(self):
         urls = self.openLinks()
         for url in urls:
@@ -17,19 +19,26 @@ class GovernotransparenteSpider(scrapy.Spider):
         page = response.url.split("/")[-2]
         ano = response.url.split("&")[2][-4:]
         city = nome[24:][:-5]
-
         # Cria pasta das bases por prefeituras
         os.system("mkdir -p baseDados")
         #Arquivo com o nome da consulta e código da cidade
         file = open('./baseDados/'+page+'('+ano+').csv', 'a')
-        head = response.css('table#datatable-buttons thead th::text').extract()
-        # link que possui atributos diferente
-        if page == 'consultarcontratoaditivo':
-            head.remove('Número')
-        else:
-            head.remove('Documento')
-            head.remove('Empenho')
-        file.write(self.convertToString(head, 'cidade', 'ano'))
+        print('#'*30, page)
+        print('#'*30, self.pageTemp)
+        print('$'*30, ano)
+        print('$'*30, self.anoTemp)
+        if self.pageTemp != page or self.anoTemp != ano:
+            # print('$'*30, self.pageTemp != page and self.anoTemp != ano)
+            self.pageTemp = page
+            self.anoTemp = ano
+            head = response.css('table#datatable-buttons thead th::text').extract()
+            # link que possui atributos diferente
+            if page == 'consultarcontratoaditivo':
+                head.remove('Número')
+            else:   
+                head.remove('Documento')
+                head.remove('Empenho')
+            file.write(self.convertToString(head, 'cidade', 'ano'))
         for i in response.css('table#datatable-buttons tbody tr'):
             row = i.css('td::text').extract()
             row[2] = row[2].replace('\n', '')

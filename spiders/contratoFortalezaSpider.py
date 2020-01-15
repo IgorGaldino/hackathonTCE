@@ -2,13 +2,13 @@
 
 import scrapy
 import os
-class TransparenciaFortalezaSpider(scrapy.Spider):
-    name = 'transparenciaFortaleza'
+class ContratoFortalezaSpider(scrapy.Spider):
+    name = 'contratoFortaleza'
     allowed_domains = ['https://transparencia.fortaleza.ce.gov.br']
     def start_requests(self):
         # urls = self.openLinks()
         # for url in urls:
-        url = 'https://transparencia.fortaleza.ce.gov.br/index.php/diarias/consultar?cboExercicio=&filtroPorOrgao=null&cboMes=&txtNome='
+        url = ' https://transparencia.fortaleza.ce.gov.br/index.php/obras/consultar?cboExercicio=&cboMes=&txtNumObra=&txtBusca=Voc%C3%AA+pode+buscar+por+parte+do+objeto+ou+por+parte+do+nome+da+contratada.'
         yield scrapy.Request(url=url, callback=self.parse)
 
     # Faz a raspagem dos dados
@@ -27,8 +27,6 @@ class TransparenciaFortalezaSpider(scrapy.Spider):
         file.write(self.convertToString(head))
         for i in response.css('table.table-striped tbody tr'):
             row = i.css('td::text').extract()
-            if row[-1:][0] == 'Não aprovado':
-                row.insert(2,'0000')
             # row[6] = row[6].rstrip()
             file.write(self.convertToString(row))
         file.close()
