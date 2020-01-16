@@ -23,10 +23,6 @@ class GovernotransparenteSpider(scrapy.Spider):
         os.system("mkdir -p baseDados")
         #Arquivo com o nome da consulta e código da cidade
         file = open('./baseDados/'+page+'('+ano+').csv', 'a')
-        print('#'*30, page)
-        print('#'*30, self.pageTemp)
-        print('$'*30, ano)
-        print('$'*30, self.anoTemp)
         if self.pageTemp != page or self.anoTemp != ano:
             # print('$'*30, self.pageTemp != page and self.anoTemp != ano)
             self.pageTemp = page
@@ -39,17 +35,26 @@ class GovernotransparenteSpider(scrapy.Spider):
                 head.remove('Documento')
                 head.remove('Empenho')
             file.write(self.convertToString(head, 'cidade', 'ano'))
-        for i in response.css('table#datatable-buttons tbody tr'):
-            row = i.css('td::text').extract()
-            row[2] = row[2].replace('\n', '')
+        for tr in response.css('table#datatable-buttons tbody tr'):
+            row = []
+            for i in tr.css('td'):
+                item = i.css('::text').extract()
+                if item == []:
+                    row.append('***')
+                else:
+                    row.append(item[0])
             file.write(self.convertToString(row, city, ano))
+        # for i in response.css('table#datatable-buttons tbody tr'):
+        #     row = i.css('td::text').extract()
+            # row[2] = row[2].replace('\n', '')
+            # file.write(self.convertToString(row, city, ano))
         file.close()
 
     #converte a lista para string
     def convertToString(self, row, city, year):
         line = city + '|' + year + '|'
         for i in row:
-            line += i + '|'
+            line += i.replace('\n', '') + '|'
         line += '\n'
         return line
     
