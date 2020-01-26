@@ -1,5 +1,5 @@
 nameFile = input('name File: ')
-tam = 25
+tam = int(input('Tamanho: '))
 with open('./baseDados/' +nameFile+ '.csv', 'w') as file:
     with open('./baseDados/' +nameFile+ '.backup.csv', 'r') as arq:
         cont = 0

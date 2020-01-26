@@ -6,16 +6,20 @@ import os
 class GetMunicipioSpider(scrapy.Spider):
     name = 'getMunicipio'
     allowed_domains = ['https://api.tce.ce.gov.br']
-    method = 'notas_pagamentos'
+    method = ''
+
+    def __init__(self, method='', *args, **kwargs):
+        self.method = method
+        super(GetMunicipioSpider, self).__init__(*args, **kwargs)
 
     def start_requests(self):
         os.system('rm -f ./baseDados/municipio-'+self.method+'.csv')
         codes = self.getCodes()
         for code in codes:
-            # for year in range(2010, 2020):
-            url = 'https://api.tce.ce.gov.br/index.php/sim/1_0/'+self.method+'?codigo_municipio='+code+'&exercicio_orcamento='+str(2019)+'00'
-            # url = "https://api.tce.ce.gov.br/index.php/sim/1_0/agentes_publicos?codigo_municipio="+code+"&exercicio_orcamento="+str(year)+"00"
-            yield scrapy.Request(url=url, callback=self.parse)
+            for year in range(2010, 2020):
+                url = 'https://api.tce.ce.gov.br/index.php/sim/1_0/'+self.method+'?codigo_municipio='+code+'&exercicio_orcamento='+str(year)+'00'
+                # url = "https://api.tce.ce.gov.br/index.php/sim/1_0/agentes_publicos?codigo_municipio="+code+"&exercicio_orcamento="+str(year)+"00"
+                yield scrapy.Request(url=url, callback=self.parse)
 
     # Faz a raspagem dos dados
     def parse(self, response):
@@ -43,7 +47,7 @@ class GetMunicipioSpider(scrapy.Spider):
     #Abre arquivos com os links 
     def getCodes(self):
         codes = []
-        with open('./baseDados/municipios.csv', 'r') as file:
+        with open('./baseDados/municipios.txt', 'r') as file:
             for line in file:
                 codes.append(line.split('"')[1])
         return codes

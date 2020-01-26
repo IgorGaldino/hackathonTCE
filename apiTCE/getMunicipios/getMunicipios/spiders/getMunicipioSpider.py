@@ -6,14 +6,14 @@ import os
 class GetMunicipioSpider(scrapy.Spider):
     name = 'getMunicipio'
     allowed_domains = ['https://api.tce.ce.gov.br']
-    method = 'agentes_publicos'
+    method = 'contratos'
 
     def start_requests(self):
         os.system('rm -f ../baseDados/municipio-'+self.method+'.csv')
         codes = self.getCodes()
         for code in codes:
             for year in range(2015, 2019):
-            # url = 'https://api.tce.ce.gov.br/index.php/sim/1_0/'+self.method+'?codigo_municipio='+code
+            # url = 'https://api.tce.ce.gov.br/index.php/sim/1_0/'+self.method+'?codigo_municipio='+code+'&data_contrato=20150101_20191231'
                 url = 'https://api.tce.ce.gov.br/index.php/sim/1_0/'+self.method+'?codigo_municipio='+code+'&exercicio_orcamento='+str(year)+'00'
                 yield scrapy.Request(url=url, callback=self.parse)
 
@@ -43,7 +43,7 @@ class GetMunicipioSpider(scrapy.Spider):
     #Abre arquivos com os links 
     def getCodes(self):
         codes = []
-        with open('../baseDados/municipios.csv', 'r') as file:
+        with open('../baseDados/municipios.txt', 'r') as file:
             for line in file:
                 codes.append(line.split('"')[1])
         return codes
