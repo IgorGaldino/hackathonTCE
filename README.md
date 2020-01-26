@@ -2,12 +2,18 @@
 Repository hackathon TCE
 
 #Dependências
-python 3
+python3
 python3-scrapy
 
 #links
-/links: contem os arquivos de links dos sites
+/links: contém os arquivos de links dos sites
+
+#Base de Daodos
+/baseDados: contém os arquivos baixado pelo bot
 
 #Run spider
 scrapy runspider nomeSpider.py
+
+#Run project scrapy apiTCE/getMunicipios
+scrapy crawl getMunicipio -a method=nomeMetodoAPI
 
