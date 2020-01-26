@@ -4,7 +4,7 @@ import scrapy
 import os
 
 class LinksServidoresFortalezaSpider(scrapy.Spider):
-    name = 'linksServidoresFortalezaSpider.py'
+    name = 'linksServidoresFortalezaSpider'
     allowed_domains = ['https://transparencia.fortaleza.ce.gov.br']
     count = 1
     def start_requests(self):
